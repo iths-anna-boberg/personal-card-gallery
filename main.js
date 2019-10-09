@@ -11,8 +11,8 @@ function formatName(name){
 }
 
 function populateCardPlus(event){
-        if(currentPersonIndex>=0){
-            currentPersonIndex++
+        if(currentPersonIndex==users.length-1){
+            currentPersonIndex=0;
         }
         else{
             currentPersonIndex++
@@ -28,7 +28,7 @@ function populateCardPlus(event){
 }
 
 function populateCardMinus(event){
-        if (currentPersonIndex<0){
+        if (currentPersonIndex==0){
             currentPersonIndex=users.length-1
         }else{
             
